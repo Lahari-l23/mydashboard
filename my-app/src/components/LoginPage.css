@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500;700&display=swap');
+
+/* General page styles */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../assets/th.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px; /* Added padding for small screens */
+  font-family: 'Poppins', sans-serif; /* Set Poppins as default font */
+}
+
+/* Logo outside */
+.logo-outside {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+/* Title paragraph */
+.login-page p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for paragraph */
+}
+
+/* Login container */
+.login-container {
+  max-width: 100%;
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+  border-radius: 20px; /* Curved corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins is used inside the container */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+/* Header inside login container */
+.login-container h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 700; /* Bold font for the header */
+  font-family: 'Roboto', sans-serif; /* Use Roboto for headings */
+}
+
+/* Label for input fields */
+.login-container label {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+  font-weight: 500; /* Medium weight for labels */
+}
+
+/* Input fields */
+.login-container input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff2e;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: 'Poppins', sans-serif; /* Poppins for input fields */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+/* Placeholder text */
+.login-container input[type="text"]::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: small;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif; /* Poppins for error message */
+}
+
+/* Button container */
+.button-container button {
+  width: 100%;
+  padding: 8px 12px; /* Smaller padding */
+  font-size: 14px; /* Smaller font size */
+  background-color: #00B7C3;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif; /* Poppins for buttons */
+}
+
+.button-container button:hover {
+  background-color: #009ba8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 20px;
+    width: 90%;
+    border-radius: 15px; /* Slightly more curved on smaller screens */
+  }
+
+  .login-page p {
+    font-size: 1rem; /* Smaller text for mobile */
+    margin-bottom: 25px;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-container input[type="text"] {
+    font-size: 14px;
+  }
+
+  .button-container button {
+    width: 50%;
+    padding: 4px 9px; /* Reduced padding */
+    font-size: 12px; /* Smaller font size */
+    background-color: #00B7C3;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif; /* Poppins for buttons */
+  }
+  
+  .button-container button:hover {
+    background-color: #009ba8;
+  }
+}
